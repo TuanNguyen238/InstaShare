@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.instashare">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".Model.EmojiApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InstaShare"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.FirstActivity"/>
+        <activity android:name=".Activity.MainPageActivity" />
+        <activity android:name=".Activity.UploadActivity" />
+        <activity
+            android:name=".Activity.FriendsActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Activity.ListChatRoomsActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Activity.MessageActivity"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Activity.WidgetActivity" />
+        <activity
+            android:name=".Activity.EmailLoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Activity.PassLoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Activity.EmailRegistrationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.PasswordRegistrationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.NameRegistrationActivity"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

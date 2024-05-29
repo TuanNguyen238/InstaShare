@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#100C0B"
+    tools:context=".Activity.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:background="@android:color/transparent"
+        android:paddingBottom="0dp"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:src="@drawable/arrow_profile"
+            android:scaleType="centerInside"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:id="@+id/imbBackToAccount"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:layout_above="@+id/btnBack">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cmvProfile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/custombuttonupdatestatus"
+                        android:padding="5dp"
+                        android:src="@drawable/profile" />
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal"
+                        android:text="Unknown"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BCBBB9"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="15dp"
+                    android:drawableLeft="@drawable/search"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:text="Bạn bè"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/customrectangle">
+                    <Button
+                        android:id="@+id/btn_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="14dp"
+                        android:drawableLeft="@drawable/people"
+                        android:drawableRight="@drawable/arrow_profilesmall"
+                        android:backgroundTint="@android:color/transparent"
+                        android:text="10 bạn bè"
+                        android:textAlignment="textStart"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BCBBB9"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/person_profile"
+                    android:text="Tổng quát"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/customrectangle">
+                    <Button
+                        android:id="@+id/btnFixPI"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/account_circle_profile"
+                        android:drawableRight="@drawable/arrow_profilesmall"
+                        android:text="Chỉnh sửa ảnh đại diện"
+                        android:textAlignment="textStart"
+                        android:textSize="14dp" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/edit"
+                        android:drawableRight="@drawable/arrow_profilesmall"
+                        android:text="Chỉnh sửa tên"
+                        android:textAlignment="textStart"
+                        android:id="@+id/btnFixName"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BCBBB9"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/about"
+                    android:text="Giới thiệu"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/customrectangle">
+                    <Button
+                        android:id="@+id/btnTiktok"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/tiktok"
+                        android:drawableRight="@drawable/arrow_profilesmall"
+                        android:text="Tiktok"
+                        android:textAlignment="textStart"
+                        android:textSize="14dp" />
+                    <Button
+                        android:id="@+id/btnInsta"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/instagram"
+                        android:drawableRight="@drawable/arrow_profilesmall"
+                        android:text="Instagram"
+                        android:textAlignment="textStart"
+                        android:textSize="14dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BCBBB9"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/danger"
+                    android:text="Vùng nguy hiểm"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/customrectangle">
+                    <Button
+                        android:id="@+id/btnSignOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/out"
+                        android:drawableRight="@drawable/arrow_profilesmall"
+                        android:text="Đăng xuất"
+                        android:textAlignment="textStart"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</FrameLayout>

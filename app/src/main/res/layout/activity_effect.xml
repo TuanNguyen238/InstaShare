@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#060503"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.ProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/customprofile">
+        <View
+            android:layout_width="44dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line">
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiêu đề"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnTextEffect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#BF60605C"
+                android:text="Văn bản"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/text"/>
+            <Button
+                android:id="@+id/btnMusicEffect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="#BF60605C"
+                android:text="Nhạc"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/music"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTimeEffect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#BF60605C"
+            android:layout_marginStart="10dp"
+            android:text="Thời gian"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/time"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

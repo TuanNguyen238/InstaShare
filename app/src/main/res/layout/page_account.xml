@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#100C0B"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MainPageActivity">
+
+    <LinearLayout
+        android:id="@+id/lnSidebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cmvProfileAcc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custombuttonupdatestatus"
+            android:padding="4dp"
+            android:src="@drawable/profile" />
+        <Button
+            android:id="@+id/btnListFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_weight="1"
+            android:text="bạn bè"
+            android:backgroundTint="#353432"
+            android:textAlignment="center" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custombutton"
+            android:src="@drawable/message"
+            android:scaleType="centerInside"
+            android:padding="7dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imbChat"/>
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/profileStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/profileLayout"
+        android:layout="@layout/custom_heading"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="50dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.camera.view.PreviewView
+                android:id="@+id/viewFinder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/menu"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:id="@+id/imbWidget"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4">
+            <ImageButton
+                android:id="@+id/imbCapture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custombuttontakephoto"
+                android:gravity="center"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/buttontakephoto" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/spin"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:padding="14dp"
+            android:id="@+id/imbRecam"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#060503">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/customrectangle">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E8717275"
+            android:layout_marginTop="5dp"
+            android:text="Thay đổi ảnh hồ sợ của bạn"
+            android:textAlignment="center"
+            android:textSize="10dp" />
+        <Button
+            android:id="@+id/btnGalleryPI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Chọn từ thư viện"
+            android:textColor="#4F8EFF"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+        <Button
+            android:id="@+id/btnTakePI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Chụp ảnh"
+            android:textColor="#4F8EFF"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+        <Button
+            android:id="@+id/btnDeletePI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Xóa ảnh hồ sơ"
+            android:textColor="#FF0000"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/customrectangle">
+        <Button
+            android:id="@+id/btnCancelPI"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Hủy"
+            android:textColor="#4F8EFF"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</LinearLayout>

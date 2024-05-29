@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1067205718083",
+    "project_id": "locket-75e2e",
+    "storage_bucket": "locket-75e2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067205718083:android:24fad2ca14919fa3ba64f6",
+        "android_client_info": {
+          "package_name": "com.example.instashare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPvIrOpJem5JQkVugyjKGt7P9UigdJX9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

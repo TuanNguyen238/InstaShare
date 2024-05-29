@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.MainPageActivity">
+
+    <com.example.instashare.Model.VerticalViewPager
+        android:id="@+id/vvpMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.instashare.Model.VerticalViewPager>
+
+    <include
+        android:id="@+id/iclHeading"
+        layout="@layout/custom_heading"
+        />
+    <include
+        android:id="@+id/icltakephoto"
+        layout="@layout/custom_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"/>
+</FrameLayout>

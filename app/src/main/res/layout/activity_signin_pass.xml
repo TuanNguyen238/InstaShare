@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#100C0B"
+    tools:context=".Activity.PassLoginActivity">
+    <ImageButton
+        android:id="@+id/btnBackLoginPass"
+        android:layout_gravity="start"
+        android:src="@drawable/baseline_arrow_back"
+        android:background="@drawable/custombutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#353432"
+        android:layout_marginTop="10dp">
+    </ImageButton>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập mật khẩu của bạn"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="26dp" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/framePassLogin"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/edtPassLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tvtitle"
+                android:layout_marginTop="30dp"
+                android:inputType="textPassword"
+                android:textSize="18dp"
+                android:password="true"
+                android:textColor="@color/white"
+                android:hint="Nhập mật khẩu"
+                android:textColorHint="#E8717275"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/customrectangle"
+                android:ems="10">
+                <requestFocus />
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/imbEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/invisible"></ImageButton>
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btnRecoveryPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/framePassLogin"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#BF60605C"
+            android:text="Quên mật khẩu?"
+            android:textSize="12dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Tiếp tục"
+        android:enabled="true"
+        android:textSize="18dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FDB700"
+        android:drawableRight="@drawable/arrow"/>
+</RelativeLayout>
